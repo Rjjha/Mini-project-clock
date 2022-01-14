@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:950px)"  href="responsive.css">
+</head>
+
+<body>
+    <section id="clock">
+        <div class="h1">
+            <h1 class="primary-1">Welcome</h1>
+        </div>
+        <div class="h2">
+            <h2 class="primary-1">This is a Digital Clock</h2>
+        </div>
+        <div class="p1">
+            <p class="secondary-1">The Current time is <span id="time"></span></p>
+        </div>
+        <div class="p1">
+            <p class="primary-1">Thanking you for visiting this website</p>
+        </div>
+    </section>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+            document.getElementById('time').innerHTML = time + "<br>on " + date;
+        }, 1000);
+    </script>
+</body>
+
+</html>

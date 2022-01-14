@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/*navbar making*/
+#navbar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(135, 142, 235, 0.87);
+}
+#navbar .logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+   margin: 0 4vw 0 4vw;
+}
+#navbar .logo img{
+     height: 9.4vh;
+     width: auto;
+     border: 0.6vh solid chocolate;
+     border-radius: 10vh;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li {
+     list-style: none;
+     margin: 0 2vw 0 auto;
+     font-family: 'PT Sans Narrow', sans-serif;
+     font-size: 1.5rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.4vh 4vh;
+    border-radius: 40px;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+/*home page*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    padding: 6vh auto 8vh auto ;
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 47vh;
+    position: relative;
+    color:darkslategray;
+}
+#home::before{
+    content:"";
+    background:url("Home-bg.jpg") no-repeat center center/cover;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.8;
+}
+#home .primary-1{
+    border-radius: 14vh;
+    border: 3px solid crimson;
+    padding: 1vh 2.5vh;
+    background-color: rgba(205, 202, 50, 0.582);
+    margin: 2vh auto;
+}
+#home .secondary-1{
+    margin: 1vh auto;
+    border-radius: 14vh;
+    border: 3px solid crimson;
+    padding: 1vh 2.5vh;
+    background-color: rgba(205, 202, 50, 0.582);
+}
+/*about*/
+#service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    position: relative;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+#service::before{
+    content:"";
+    background-color:springgreen;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+#service .options{
+    display: flex;
+}
+#service .options li {
+    list-style: none;
+    margin: 3vh 3vh;
+    font-size: 3rem;
+}
+#service .options li a{
+    text-decoration: none;
+    border: 3px solid green;
+    padding: 1.4vh 6vh;
+    border-radius: 4vh;
+}
+#service .options li a:hover{
+    background-color: pink;
+    color: saddlebrown;
+    font-weight: bolder;
+    cursor: pointer;
+}
+/*footer*/
+#footer{
+    height: 8vh;
+    background-color: black;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+}
+#footer p{
+    font-size: 1.8rem;
+    padding-top: 2vh;
+}
+/*clock*/
+#clock{
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#clock .h1{
+    margin-top: 8vh;
+    border: 2px solid green;
+    padding: 3vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+} 
+#clock .h2{
+    margin-top: 8vh;
+    border: 2px solid green;
+    padding: 3vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+} 
+#clock .p1{
+    margin-top: 8vh;
+    border: 2px solid green;
+    padding: 3vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+} 
+#clock #time{
+    margin-top: 8vh;
+    font-weight: bolder;
+    background-color: solid red;
+    color: blueviolet;
+} 
+/*analog clock*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   position: relative;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    }
+    .box::before{
+        content: "";
+        background:url("bg.jpg");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        opacity: 0.8;
+    }
+.container{
+    background: url("analog_clock.png");
+    height: 55vh;
+    width: 55vh;
+    margin: 12vh auto 2vh auto;
+    background-size: 100%;
+    position: relative;
+}
+.container #hour{
+    width: 0.35vw;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    top: 32%;
+    left: 49.5%;
+    transform-origin: bottom;
+  
+}
+.container #minute{
+    width: 0.25vw;
+    height: 12vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    top: 28%;
+    left: 49.7%;
+    transform-origin: bottom;
+}
+.container #second{
+    width: 0.2vw;
+    height: 15vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    top: 23%;
+    left: 49.85%;
+    transform-origin: bottom;
+}
+#analog_clock{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+#analog_clock .h1{
+    margin-top: 2vh;
+    border: 2px solid green;
+    padding: 1.5vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+
+}
+#analog_clock .h2{
+    margin-top: 2vh;
+    border: 2px solid green;
+    padding: 1.5vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+}
+.box .p1{
+    border: 2px solid green;
+    padding: 1.5vh 6vh;
+    border-radius: 5vh;
+    background-color: black;
+    color: white;
+}
+/*utility classes*/
+.primary-1{
+    font-size: 2.5rem;
+    font-weight:1.5rem;
+}
+.secondary-1{
+    font-size: 2.5rem;
+}

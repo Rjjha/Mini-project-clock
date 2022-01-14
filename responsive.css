@@ -1,0 +1,40 @@
+#home{
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#home::before{
+    height: 100;
+    position: absolute;
+}
+#service{
+    height: auto;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#service .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#service::before{
+    height: 100;
+    position: absolute;
+}.primary-1{
+    font-size: 2.5rem;
+    font-weight:1.5rem;
+    text-align: center;
+}
+.secondary-1{
+    font-size: 2.5rem;
+}
+/*for container*/
+.container{
+}
