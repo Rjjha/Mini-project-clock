@@ -178,7 +178,7 @@ html{
     flex-direction: column;
     justify-content: center;
    position: relative;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     align-items: center;
     }
@@ -194,40 +194,40 @@ html{
     }
 .container{
     background: url("analog_clock.png");
-    height: 55vh;
-    width: 55vh;
+    height: 26.5vw;
+    width:26.5vw;
     margin: 12vh auto 2vh auto;
     background-size: 100%;
     position: relative;
 }
 .container #hour{
     width: 0.35vw;
-    height: 10vh;
+    height: 5vw;
     background-color: black;
     position: absolute;
     border-radius: 4px;
     top: 32%;
-    left: 49.5%;
+    left: 50%;
     transform-origin: bottom;
   
 }
 .container #minute{
     width: 0.25vw;
-    height: 12vh;
+    height: 7vw;
     background-color: black;
     position: absolute;
     border-radius: 4px;
-    top: 28%;
+    top: 23%;
     left: 49.7%;
     transform-origin: bottom;
 }
 .container #second{
     width: 0.2vw;
-    height: 15vh;
+    height: 9vw;
     background-color: black;
     position: absolute;
     border-radius: 4px;
-    top: 23%;
+    top: 16%;
     left: 49.85%;
     transform-origin: bottom;
 }
